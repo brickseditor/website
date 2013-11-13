@@ -22,10 +22,6 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: yeomanConfig,
     watch: {
-      coffee: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
-        tasks: ['coffee']
-      },
       recess: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
         tasks: ['recess']
@@ -105,17 +101,6 @@ module.exports = function (grunt) {
           run: true,
           urls: ['http://localhost:<%= connect.options.port %>/index.html']
         }
-      }
-    },
-    coffee: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/scripts',
-          src: '{,*/}*.coffee',
-          dest: '<%= yeoman.app %>/scripts',
-          ext: '.js'
-        }]
       }
     },
     recess: {
@@ -248,7 +233,6 @@ module.exports = function (grunt) {
     },
     concurrent: {
       dist: [
-        'coffee',
         'recess',
         'imagemin',
         'svgmin',
@@ -264,7 +248,6 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'coffee',
       'recess',
       'copy:server',
       'connect:livereload',
@@ -274,7 +257,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'coffee',
     'recess',
     'copy:server',
     'connect:test',
