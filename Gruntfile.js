@@ -22,9 +22,9 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: yeomanConfig,
     watch: {
-      recess: {
+      less: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
-        tasks: ['recess']
+        tasks: ['less']
       },
       livereload: {
         options: {
@@ -103,11 +103,8 @@ module.exports = function (grunt) {
         }
       }
     },
-    recess: {
+    less: {
       dist: {
-        options: {
-          compile: true
-        },
         files: {
           '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.less']
         }
@@ -233,7 +230,7 @@ module.exports = function (grunt) {
     },
     concurrent: {
       dist: [
-        'recess',
+        'less',
         'imagemin',
         'svgmin',
         'htmlmin'
@@ -248,7 +245,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'recess',
+      'less',
       'copy:server',
       'connect:livereload',
       'watch'
@@ -257,7 +254,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'recess',
+    'less',
     'copy:server',
     'connect:test',
     'mocha'
