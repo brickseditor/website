@@ -20,7 +20,6 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="">Home</a></li>
-          <li><a href="http://editor.brickseditor.com/">Editor</a></li>
           <li><a href="https://github.com/sorich87/bricks/wiki">Documentation</a></li>
           <li><a href="https://github.com/sorich87/bricks/issues">Bug Reports</a></li>
         </ul>
@@ -29,13 +28,45 @@
 
       <div class="jumbotron">
         <h1>Spend 90% less time and money developing your web apps</h1>
-        <p class="lead">Bricks is the next generation web app editor built on <a href="http://angularjs.org/">AngularJS</a>
-        and <a href="http://getbootstrap.com/">Bootstrap</a>.
+        <p class="lead">Bricks is the next generation web app editor built on <a href="http://angularjs.org/">AngularJS</a>.
         <br />No programming knowledge required. Open source and free to use.</p>
         <p>
-        <a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=dESunMRqxN0" role="button">Watch the video</a>
-        <a class="btn btn-lg btn-success" href="http://editor.brickseditor.com/" role="button">Get started now</a>
+          <a class="btn btn-lg btn-primary" role="button" disabled href="">Download Desktop App</a>
+          <a class="btn btn-lg btn-primary" role="button" target="_blank"
+            href="http://editor.brickseditor.com/">Launch Web App</a>
         </p>
+        <p>
+          <button class="btn btn-link" data-toggle="modal" data-target="#video">watch the video</button>
+        </p>
+
+        <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Building a contact management app with Bricks</h4>
+              </div>
+              <div class="modal-body">
+                <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/dESunMRqxN0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <ul class="list-inline">
+          <li><iframe src="http://ghbtns.com/github-btn.html?user=sorich87&repo=bricks&type=watch&count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+
+          <li><iframe src="http://ghbtns.com/github-btn.html?user=sorich87&repo=bricks&type=fork&count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="102" height="20"></iframe></li>
+
+          <li class="follow-btn"><a href="https://twitter.com/brickseditor" class="twitter-follow-button"
+            data-link-color="#0069D6" data-show-count="true">Follow @brickseditor</a></li>
+
+          <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button"
+            data-url="http://brickseditor.com/" data-count="horizontal" data-via="brickseditor"
+            data-related="sorich87:Creator of Bricks Editor">Tweet</a></li>
+        </ul>
       </div>
 
       <div class="row marketing">
@@ -46,7 +77,7 @@
 
           <h4>Customizable and extensible</h4>
           <p>Control the look and feel of your apps with your own HTML and CSS code.
-          Write complex business logic with custom JavaScript code.</p>
+          Write complex business logic with custom JavaScript code, import any library.</p>
         </div>
 
         <div class="col-lg-6">
@@ -56,7 +87,7 @@
 
           <h4>Open technologies</h4>
           <p>Bricks is built on open standards, open source code and an open community.
-          You can easily download your apps and host them anywhere.</p>
+          You can easily host and run your apps anywhere.</p>
         </div>
       </div>
 
@@ -67,7 +98,7 @@
           <ul>
             <li>live training and customer service</li>
             <li>priority for feature requests</li>
-            <li>commercial licenses</li>
+            <li>commercial licenses (if the GPL license doesn't suit you)</li>
           </ul>
           <p>Subscriptions start at <b>$299+ per year</b>,
           less than the daily rate of a good developper.</p>
@@ -81,26 +112,7 @@
             <li><a href="https://github.com/sorich87/bricks-samples">Sample Apps</a></li>
             <li><a href="https://www.youtube.com/channel/UCfiPPymsFv6_JqPPW3L73GQ">Videos</a></li>
             <li><a href="https://groups.google.com/forum/#!forum/brickseditor">Forum</a></li>
-            <li><a href="https://github.com/sorich87/bricks/wiki">Documentation</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-inline">
-            <li><iframe src="http://ghbtns.com/github-btn.html?user=sorich87&repo=bricks&type=watch&count=true"
-              allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
-
-            <li><iframe src="http://ghbtns.com/github-btn.html?user=sorich87&repo=bricks&type=fork&count=true"
-              allowtransparency="true" frameborder="0" scrolling="0" width="102" height="20"></iframe></li>
-
-            <li class="follow-btn"><a href="https://twitter.com/brickseditor" class="twitter-follow-button"
-              data-link-color="#0069D6" data-show-count="true">Follow @brickseditor</a></li>
-
-            <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button"
-              data-url="http://brickseditor.com/" data-count="horizontal" data-via="brickseditor"
-              data-related="sorich87:Creator of Bricks Editor">Tweet</a></li>
+            <li><a href="https://github.com/sorich87/bricks">Development</a></li>
           </ul>
         </div>
       </div>

@@ -7783,6 +7783,9 @@ body {
 .marketing h4 {
   margin-top: 28px;
 }
+#video iframe {
+  width: 100%;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
